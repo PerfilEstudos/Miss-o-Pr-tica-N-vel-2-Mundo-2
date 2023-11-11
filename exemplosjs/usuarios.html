@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Usuários</title>
+    <style>
+        body{
+            background-color: rgb(255, 247, 0);
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <div id="painel de usuarios">
+            <h1>Usuários de Teste via Reset</h1>
+        </div>
+    
+        <div id="usuarios">
+            <div class="row">
+            <h1>Usuários de Teste via Reset</h1>
+    </div> 
+    
+  <script src="https://unpkg.com/vue@3.0.0-rc.5/dist/vue.global.js"></script>
+
+  <!-- Abrimos um bloco de script local para trabalharmos com o Vue.js -->
+  <script>
+      //Criamos uma Vue Instance (um App)
+      Vue.createApp({
+          //Dizemos quais dados esse App irá gerenciar
+          // data é uma função, (){ .... }
+          usuarios() {
+              // que retorna Objeto (JSON)
+              return {
+                  //nome e matricula inicialmente são Strings (textos) em branco ""
+                  nome: "",
+                  matricula: "",
+              }
+          },
+          //Dizemos onde em nosso HTML o Vue irá viver, neste caso no bloco HTML com id central
+      }).mount("#app")
+  </script>
+  </div>
+
+
+
+</body>
+</html>
